@@ -14,10 +14,6 @@
         * {
             box-sizing: border-box;
         }
-
-        .row {
-            display: flex;
-        }
     </style>
     <script src="js\scripting.js"></script>
 </head>
@@ -67,245 +63,520 @@
             <p class="description">A display of art by Deepa Thakuria</p>
         </div>
     </div>
-    
+
     <!--*************************Arts displayed arranged in rows and columns*****************************-->
+    <div id="items-container">
+        <!--********************Image 1*****************************-->
 
-    <!--********************Image 1*****************************-->
-    <div class="row row bs">
-        <div class="column col-md-4 image-container">
-            <img src="img\Deepa art_page-0006a.jpg" alt="Snow" style="width:100%" class="smallimg">
-            <div class="image-text">IMAGE 1</div>
-            <div class="button-overlay">
-                <button onclick="openModal('myModal1')">View Details</button>
+        <div class="row row bs">
+            <div class="column col-md-4 image-container">
+                <img src="img\Deepa art_page-0006a.jpg" alt="Snow" style="width:100%" class="smallimg">
+                <div class="image-text">IMAGE 1</div>
+                <div class="button-overlay">
+                    <button onclick="openModal('myModal1')">View Details</button>
+                </div>
             </div>
-        </div>
-        <div id="myModal1" class="modal">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h2>Image 1(...)</h2>
-                    <span class="close" onclick="closeModal('myModal1')">&times;</span>
+            <div id="myModal1" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2>Image 1(...)</h2>
+                        <span class="close" onclick="closeModal('myModal1')">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img\Deepa art_page-0006a.jpg" alt="Snow" style="width:100%"
+                            class="d-block w-100 bigimg">
+                        <p>...description if any</p>
+                    </div>
+                    <div class="modal-footer button-overlay">
+                        <button onclick="closeModal('myModal1')">Close</button>
+                    </div>
                 </div>
-                <div class="modal-body">
-                    <img src="img\Deepa art_page-0006a.jpg" alt="Snow" style="width:100%" class="d-block w-100 bigimg">
-                    <p>...description if any</p>
+            </div>
+
+            <!--********************Image 2*****************************-->
+            <div class="column col-md-4 image-container">
+                <img src="img\Deepa art_page-0007a.jpg" alt="Forest" style="width:100%" class="smallimg">
+                <div class="image-text">IMAGE 2</div>
+                <div class="button-overlay">
+                    <button onclick="openModal('myModal2')">View Details</button>
                 </div>
-                <div class="modal-footer button-overlay">
-                    <button onclick="closeModal('myModal1')">Close</button>
+            </div>
+            <div id="myModal2" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2>Image 1(...)</h2>
+                        <span class="close" onclick="closeModal('myModal2')">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img\Deepa art_page-0007a.jpg" alt="Snow" style="width:100%"
+                            class="d-block w-100 bigimg">
+                        <p>...description if any</p>
+                    </div>
+                    <div class="modal-footer button-overlay">
+                        <button onclick="closeModal('myModal2')">Close</button>
+                    </div>
+                </div>
+            </div>
+
+            <!--********************Image 3*****************************-->
+            <div class="column col-md-4 image-container">
+                <img src="img\Deepa art_page-0012a.jpg" alt="Mountains" style="width:100%" class="smallimg">
+                <div class="image-text">IMAGE 3</div>
+                <div class="button-overlay">
+                    <button onclick="openModal('myModal3')">View Details</button>
+                </div>
+            </div>
+            <div id="myModal3" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2>Image 1(...)</h2>
+                        <span class="close" onclick="closeModal('myModal3')">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img\Deepa art_page-0012a.jpg" alt="Snow" style="width:100%"
+                            class="d-block w-100 bigimg">
+                        <p>...description if any</p>
+                    </div>
+                    <div class="modal-footer button-overlay">
+                        <button onclick="closeModal('myModal3')">Close</button>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <!--********************Image 2*****************************-->
-        <div class="column col-md-4 image-container">
-            <img src="img\Deepa art_page-0007a.jpg" alt="Forest" style="width:100%" class="smallimg">
-            <div class="image-text">IMAGE 2</div>
-            <div class="button-overlay">
-                <button onclick="openModal('myModal2')">View Details</button>
+        <!--********************Image 4*****************************-->
+
+        <div class="row row bs">
+            <div class="column col-md-4 image-container">
+                <img src="img\Deepa art_page-0009a.jpg" alt="Snow" style="width:100%" class="smallimg">
+                <div class="image-text">IMAGE 4</div>
+                <div class="button-overlay">
+                    <button onclick="openModal('myModal4')">View Details</button>
+                </div>
             </div>
-        </div>
-        <div id="myModal2" class="modal">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h2>Image 1(...)</h2>
-                    <span class="close" onclick="closeModal('myModal2')">&times;</span>
+            <div id="myModal4" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2>Image 1(...)</h2>
+                        <span class="close" onclick="closeModal('myModal4')">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img\Deepa art_page-0009a.jpg" alt="Snow" style="width:100%"
+                            class="d-block w-100 bigimg">
+                        <p>...description if any</p>
+                    </div>
+                    <div class="modal-footer button-overlay">
+                        <button onclick="closeModal('myModal4')">Close</button>
+                    </div>
                 </div>
-                <div class="modal-body">
-                    <img src="img\Deepa art_page-0007a.jpg" alt="Snow" style="width:100%" class="d-block w-100 bigimg">
-                    <p>...description if any</p>
+            </div>
+
+            <!--********************Image 5*****************************-->
+            <div class="column col-md-4 image-container">
+                <img src="img\Deepa art_page-0010a.jpg" alt="Forest" style="width:100%" class="smallimg">
+                <div class="image-text">IMAGE 5</div>
+                <div class="button-overlay">
+                    <button onclick="openModal('myModal5')">View Details</button>
                 </div>
-                <div class="modal-footer button-overlay">
-                    <button onclick="closeModal('myModal2')">Close</button>
+            </div>
+            <div id="myModal5" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2>Image 1(...)</h2>
+                        <span class="close" onclick="closeModal('myModal5')">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img\Deepa art_page-0010a.jpg" alt="Snow" style="width:100%"
+                            class="d-block w-100 bigimg">
+                        <p>...description if any</p>
+                    </div>
+                    <div class="modal-footer button-overlay">
+                        <button onclick="closeModal('myModal5')">Close</button>
+                    </div>
+                </div>
+            </div>
+
+            <!--********************Image 6*****************************-->
+            <div class="column col-md-4 image-container">
+                <img src="img\Deepa art_page-0011a.jpg" alt="Mountains" style="width:100%" class="smallimg">
+                <div class="image-text">IMAGE 6</div>
+                <div class="button-overlay">
+                    <button onclick="openModal('myModal6')">View Details</button>
+                </div>
+            </div>
+            <div id="myModal6" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2>Image 1(...)</h2>
+                        <span class="close" onclick="closeModal('myModal6')">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img\Deepa art_page-0011a.jpg" alt="Snow" style="width:100%"
+                            class="d-block w-100 bigimg">
+                        <p>...description if any</p>
+                    </div>
+                    <div class="modal-footer button-overlay">
+                        <button onclick="closeModal('myModal6')">Close</button>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <!--********************Image 3*****************************-->
-        <div class="column col-md-4 image-container">
-            <img src="img\Deepa art_page-0012a.jpg" alt="Mountains" style="width:100%" class="smallimg">
-            <div class="image-text">IMAGE 3</div>
-            <div class="button-overlay">
-                <button onclick="openModal('myModal3')">View Details</button>
+        <!--********************Image 7*****************************-->
+        <div class="row row bs">
+            <div class="column col-md-4 image-container">
+                <img src="img\Deepa art_page-0014a.jpg" alt="Snow" style="width:100%" class="smallimg">
+                <div class="image-text">IMAGE 7</div>
+                <div class="button-overlay">
+                    <button onclick="openModal('myModal7')">View Details</button>
+                </div>
+            </div>
+            <div id="myModal7" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2>Image 1(...)</h2>
+                        <span class="close" onclick="closeModal('myModal7')">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img\Deepa art_page-0014a.jpg" alt="Snow" style="width:100%"
+                            class="d-block w-100 bigimg">
+                        <p>...description if any</p>
+                    </div>
+                    <div class="modal-footer button-overlay">
+                        <button onclick="closeModal('myModal7')">Close</button>
+                    </div>
+                </div>
+            </div>
+
+            <!--********************Image 8*****************************-->
+            <div class="column col-md-4 image-container">
+                <img src="img\Deepa art_page-0015a.jpg" alt="Forest" style="width:100%" class="smallimg">
+                <div class="image-text">IMAGE 8</div>
+                <div class="button-overlay">
+                    <button onclick="openModal('myModal8')">View Details</button>
+                </div>
+            </div>
+            <div id="myModal8" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2>Image 1(...)</h2>
+                        <span class="close" onclick="closeModal('myModal8')">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img\Deepa art_page-0015a.jpg" alt="Snow" style="width:100%"
+                            class="d-block w-100 bigimg">
+                        <p>...description if any</p>
+                    </div>
+                    <div class="modal-footer button-overlay">
+                        <button onclick="closeModal('myModal8')">Close</button>
+                    </div>
+                </div>
+            </div>
+
+            <!--********************Image 9*****************************-->
+            <div class="column col-md-4 image-container">
+                <img src="img\Deepa art_page-0016a.jpg" alt="Mountains" style="width:100%" class="smallimg">
+                <div class="image-text">IMAGE 9</div>
+                <div class="button-overlay">
+                    <button onclick="openModal('myModal9')">View Details</button>
+                </div>
+            </div>
+            <div id="myModal9" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2>Image 1(...)</h2>
+                        <span class="close" onclick="closeModal('myModal9')">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img\Deepa art_page-0016a.jpg" alt="Snow" style="width:100%"
+                            class="d-block w-100 bigimg">
+                        <p>...description if any</p>
+                    </div>
+                    <div class="modal-footer button-overlay">
+                        <button onclick="closeModal('myModal9')">Close</button>
+                    </div>
+                </div>
             </div>
         </div>
-        <div id="myModal3" class="modal">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h2>Image 1(...)</h2>
-                    <span class="close" onclick="closeModal('myModal3')">&times;</span>
+
+        <!--*********************The hidden arts-displayed when view more is clicked*********************-->
+        <!--********************Image 10*****************************-->
+        <div class="row row bs hidden">
+            <div class="column col-md-4 image-container">
+                <img src="img\Deepa art_page-0017a.jpg" alt="Snow" style="width:100%" class="smallimg">
+                <div class="image-text">IMAGE 10</div>
+                <div class="button-overlay">
+                    <button onclick="openModal('myModal8')">View Details</button>
                 </div>
-                <div class="modal-body">
-                    <img src="img\Deepa art_page-0012a.jpg" alt="Snow" style="width:100%" class="d-block w-100 bigimg">
-                    <p>...description if any</p>
+            </div>
+            <div id="myModal10" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2>Image 10(...)</h2>
+                        <span class="close" onclick="closeModal('myModal8')">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img\Deepa art_page-0017a.jpg" alt="Snow" style="width:100%"
+                            class="d-block w-100 bigimg">
+                        <p>...description if any</p>
+                    </div>
+                    <div class="modal-footer button-overlay">
+                        <button onclick="closeModal('myModal8')">Close</button>
+                    </div>
                 </div>
-                <div class="modal-footer button-overlay">
-                    <button onclick="closeModal('myModal3')">Close</button>
+            </div>
+
+            <!--********************Image 11*****************************-->
+            <div class="column col-md-4 image-container">
+                <img src="img\Deepa art_page-0018a.jpg" alt="Forest" style="width:100%" class="smallimg">
+                <div class="image-text">IMAGE 11</div>
+                <div class="button-overlay">
+                    <button onclick="openModal('myModal11')">View Details</button>
+                </div>
+            </div>
+            <div id="myModal11" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2>Image 11(...)</h2>
+                        <span class="close" onclick="closeModal('myModal11')">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img\Deepa art_page-0018a.jpg" alt="Snow" style="width:100%"
+                            class="d-block w-100 bigimg">
+                        <p>...description if any</p>
+                    </div>
+                    <div class="modal-footer button-overlay">
+                        <button onclick="closeModal('myModal11')">Close</button>
+                    </div>
+                </div>
+            </div>
+
+            <!--********************Image 12*****************************-->
+            <div class="column col-md-4 image-container">
+                <img src="img\Deepa art_page-0019a.jpg" alt="Mountains" style="width:100%" class="smallimg">
+                <div class="image-text">IMAGE 12</div>
+                <div class="button-overlay">
+                    <button onclick="openModal('myModal12')">View Details</button>
+                </div>
+            </div>
+            <div id="myModal12" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2>Image 1(...)</h2>
+                        <span class="close" onclick="closeModal('myModal12')">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img\Deepa art_page-0019a.jpg" alt="Snow" style="width:100%"
+                            class="d-block w-100 bigimg">
+                        <p>...description if any</p>
+                    </div>
+                    <div class="modal-footer button-overlay">
+                        <button onclick="closeModal('myModal12')">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--********************Image 13*****************************-->
+        <div class="row row bs hidden">
+            <div class="column col-md-4 image-container">
+                <img src="img\Deepa art_page-0020a.jpg" alt="Snow" style="width:100%" class="smallimg">
+                <div class="image-text">IMAGE 7</div>
+                <div class="button-overlay">
+                    <button onclick="openModal('myModal13')">View Details</button>
+                </div>
+            </div>
+            <div id="myModal13" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2>Image 1(...)</h2>
+                        <span class="close" onclick="closeModal('myModal13')">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img\Deepa art_page-0020a.jpg" alt="Snow" style="width:100%"
+                            class="d-block w-100 bigimg">
+                        <p>...description if any</p>
+                    </div>
+                    <div class="modal-footer button-overlay">
+                        <button onclick="closeModal('myModal13')">Close</button>
+                    </div>
+                </div>
+            </div>
+
+            <!--********************Image 14*****************************-->
+            <div class="column col-md-4 image-container">
+                <img src="img\Deepa art_page-0021a.jpg" alt="Forest" style="width:100%" class="smallimg">
+                <div class="image-text">IMAGE 8</div>
+                <div class="button-overlay">
+                    <button onclick="openModal('myModal14')">View Details</button>
+                </div>
+            </div>
+            <div id="myModal14" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2>Image 1(...)</h2>
+                        <span class="close" onclick="closeModal('myModal14')">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img\Deepa art_page-0021a.jpg" alt="Snow" style="width:100%"
+                            class="d-block w-100 bigimg">
+                        <p>...description if any</p>
+                    </div>
+                    <div class="modal-footer button-overlay">
+                        <button onclick="closeModal('myModal14')">Close</button>
+                    </div>
+                </div>
+            </div>
+
+            <!--********************Image 15*****************************-->
+            <div class="column col-md-4 image-container">
+                <img src="img\Deepa art_page-0022a.jpg" alt="Mountains" style="width:100%" class="smallimg">
+                <div class="image-text">IMAGE 9</div>
+                <div class="button-overlay">
+                    <button onclick="openModal('myModal15')">View Details</button>
+                </div>
+            </div>
+            <div id="myModal15" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2>Image 1(...)</h2>
+                        <span class="close" onclick="closeModal('myModal15')">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img\Deepa art_page-0022a.jpg" alt="Snow" style="width:100%"
+                            class="d-block w-100 bigimg">
+                        <p>...description if any</p>
+                    </div>
+                    <div class="modal-footer button-overlay">
+                        <button onclick="closeModal('myModal15')">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--********************Image 16*****************************-->
+        <div class="row row bs  hidden">
+            <div class="column col-md-4 image-container">
+                <img src="img\Deepa art_page-0023a.jpg" alt="Snow" style="width:100%" class="smallimg">
+                <div class="image-text">IMAGE 7</div>
+                <div class="button-overlay">
+                    <button onclick="openModal('myModal16')">View Details</button>
+                </div>
+            </div>
+            <div id="myModal16" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2>Image 1(...)</h2>
+                        <span class="close" onclick="closeModal('myModal16')">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img\Deepa art_page-0023a.jpg" alt="Snow" style="width:100%"
+                            class="d-block w-100 bigimg">
+                        <p>...description if any</p>
+                    </div>
+                    <div class="modal-footer button-overlay">
+                        <button onclick="closeModal('myModal16')">Close</button>
+                    </div>
+                </div>
+            </div>
+
+            <!--********************Image 17*****************************-->
+            <div class="column col-md-4 image-container">
+                <img src="img\Deepa art_page-0024a.jpg" alt="Forest" style="width:100%" class="smallimg">
+                <div class="image-text">IMAGE 8</div>
+                <div class="button-overlay">
+                    <button onclick="openModal('myModal17')">View Details</button>
+                </div>
+            </div>
+            <div id="myModal17" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2>Image 1(...)</h2>
+                        <span class="close" onclick="closeModal('myModal17')">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img\Deepa art_page-0024a.jpg" alt="Snow" style="width:100%"
+                            class="d-block w-100 bigimg">
+                        <p>...description if any</p>
+                    </div>
+                    <div class="modal-footer button-overlay">
+                        <button onclick="closeModal('myModal17')">Close</button>
+                    </div>
+                </div>
+            </div>
+
+            <!--********************Image 18*****************************-->
+            <div class="column col-md-4 image-container">
+                <img src="img\Deepa art_page-0013a.jpg" alt="Mountains" style="width:100%" class="smallimg">
+                <div class="image-text">IMAGE 9</div>
+                <div class="button-overlay">
+                    <button onclick="openModal('myModal18')">View Details</button>
+                </div>
+            </div>
+            <div id="myModal18" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2>Image 1(...)</h2>
+                        <span class="close" onclick="closeModal('myModal18')">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img\Deepa art_page-0013a.jpg" alt="Snow" style="width:100%"
+                            class="d-block w-100 bigimg">
+                        <p>...description if any</p>
+                    </div>
+                    <div class="modal-footer button-overlay">
+                        <button onclick="closeModal('myModal18')">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--********************Image 19*****************************-->
+        <div class="row row bs hidden">
+            <div class="column col-md-4 image-container">
+                <img src="img\Deepa art_page-0008a.jpg" alt="Snow" style="width:100%" class="smallimg">
+                <div class="image-text">IMAGE 7</div>
+                <div class="button-overlay">
+                    <button onclick="openModal('myModal19')">View Details</button>
+                </div>
+            </div>
+            <div id="myModal19" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2>Image 1(...)</h2>
+                        <span class="close" onclick="closeModal('myModal19')">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img\Deepa art_page-0008a.jpg" alt="Snow" style="width:100%"
+                            class="d-block w-100 bigimg">
+                        <p>...description if any</p>
+                    </div>
+                    <div class="modal-footer button-overlay">
+                        <button onclick="closeModal('myModal19')">Close</button>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!--********************Image 4*****************************-->
-
-    <div class="row row bs">
-        <div class="column col-md-4 image-container">
-            <img src="img\Deepa art_page-0009a.jpg" alt="Snow" style="width:100%" class="smallimg">
-            <div class="image-text">IMAGE 4</div>
-            <div class="button-overlay">
-                <button onclick="openModal('myModal4')">View Details</button>
-            </div>
-        </div>
-        <div id="myModal4" class="modal">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h2>Image 1(...)</h2>
-                    <span class="close" onclick="closeModal('myModal4')">&times;</span>
-                </div>
-                <div class="modal-body">
-                    <img src="img\Deepa art_page-0009a.jpg" alt="Snow" style="width:100%" class="d-block w-100 bigimg">
-                    <p>...description if any</p>
-                </div>
-                <div class="modal-footer button-overlay">
-                    <button onclick="closeModal('myModal4')">Close</button>
-                </div>
-            </div>
-        </div>
-
-        <!--********************Image 5*****************************-->
-        <div class="column col-md-4 image-container">
-            <img src="img\Deepa art_page-0010a.jpg" alt="Forest" style="width:100%" class="smallimg">
-            <div class="image-text">IMAGE 5</div>
-            <div class="button-overlay">
-                <button onclick="openModal('myModal5')">View Details</button>
-            </div>
-        </div>
-        <div id="myModal5" class="modal">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h2>Image 1(...)</h2>
-                    <span class="close" onclick="closeModal('myModal5')">&times;</span>
-                </div>
-                <div class="modal-body">
-                    <img src="img\Deepa art_page-0010a.jpg" alt="Snow" style="width:100%" class="d-block w-100 bigimg">
-                    <p>...description if any</p>
-                </div>
-                <div class="modal-footer button-overlay">
-                    <button onclick="closeModal('myModal5')">Close</button>
-                </div>
-            </div>
-        </div>
-
-        <!--********************Image 6*****************************-->
-        <div class="column col-md-4 image-container">
-            <img src="img\Deepa art_page-0011a.jpg" alt="Mountains" style="width:100%" class="smallimg">
-            <div class="image-text">IMAGE 6</div>
-            <div class="button-overlay">
-                <button onclick="openModal('myModal6')">View Details</button>
-            </div>
-        </div>
-        <div id="myModal6" class="modal">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h2>Image 1(...)</h2>
-                    <span class="close" onclick="closeModal('myModal6')">&times;</span>
-                </div>
-                <div class="modal-body">
-                    <img src="img\Deepa art_page-0011a.jpg" alt="Snow" style="width:100%" class="d-block w-100 bigimg">
-                    <p>...description if any</p>
-                </div>
-                <div class="modal-footer button-overlay">
-                    <button onclick="closeModal('myModal6')">Close</button>
-                </div>
-            </div>
-        </div>
+    <div class="text-center button-overlay2">
+        <button id="viewMoreBtn" onclick="toggleHiddenObjects()">View More</button>
     </div>
 
-    <!--********************Image 7*****************************-->
-    <div class="row row bs">
-        <div class="column col-md-4 image-container">
-            <img src="img\Deepa art_page-0014a.jpg" alt="Snow" style="width:100%" class="smallimg">
-            <div class="image-text">IMAGE 7</div>
-            <div class="button-overlay">
-                <button onclick="openModal('myModal7')">View Details</button>
-            </div>
-        </div>
-        <div id="myModal7" class="modal">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h2>Image 1(...)</h2>
-                    <span class="close" onclick="closeModal('myModal7')">&times;</span>
-                </div>
-                <div class="modal-body">
-                    <img src="img\Deepa art_page-0014a.jpg" alt="Snow" style="width:100%" class="d-block w-100 bigimg">
-                    <p>...description if any</p>
-                </div>
-                <div class="modal-footer button-overlay">
-                    <button onclick="closeModal('myModal7')">Close</button>
-                </div>
-            </div>
-        </div>
-
-        <!--********************Image 8*****************************-->
-        <div class="column col-md-4 image-container">
-            <img src="img\Deepa art_page-0015a.jpg" alt="Forest" style="width:100%" class="smallimg">
-            <div class="image-text">IMAGE 8</div>
-            <div class="button-overlay">
-                <button onclick="openModal('myModal8')">View Details</button>
-            </div>
-        </div>
-        <div id="myModal8" class="modal">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h2>Image 1(...)</h2>
-                    <span class="close" onclick="closeModal('myModal8')">&times;</span>
-                </div>
-                <div class="modal-body">
-                    <img src="img\Deepa art_page-0015a.jpg" alt="Snow" style="width:100%" class="d-block w-100 bigimg">
-                    <p>...description if any</p>
-                </div>
-                <div class="modal-footer button-overlay">
-                    <button onclick="closeModal('myModal8')">Close</button>
-                </div>
-            </div>
-        </div>
-
-        <!--********************Image 9*****************************-->
-        <div class="column col-md-4 image-container">
-            <img src="img\Deepa art_page-0016a.jpg" alt="Mountains" style="width:100%" class="smallimg">
-            <div class="image-text">IMAGE 9</div>
-            <div class="button-overlay">
-                <button onclick="openModal('myModal9')">View Details</button>
-            </div>
-        </div>
-        <div id="myModal9" class="modal">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h2>Image 1(...)</h2>
-                    <span class="close" onclick="closeModal('myModal9')">&times;</span>
-                </div>
-                <div class="modal-body">
-                    <img src="img\Deepa art_page-0016a.jpg" alt="Snow" style="width:100%" class="d-block w-100 bigimg">
-                    <p>...description if any</p>
-                </div>
-                <div class="modal-footer button-overlay">
-                    <button onclick="closeModal('myModal9')">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <section class="about_area">
         <div class="about_content">
-          <h2>ABOUT THE ARTIST</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos veritatis culpa, eveniet nobis, dignissimos unde, repellat laboriosam placeat quam expedita tempora minus odio voluptatibus? Cum, repellat voluptatum eligendi nisi quas sed tempore sit, veniam at accusamus ipsum? Illo deleniti laborum libero fugiat, sequi ipsam ut repellat ipsum porro nostrum modi?</p>
-          
-          </div>
-        
-        
+            <h2>ABOUT THE ARTIST</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos veritatis culpa, eveniet nobis, dignissimos
+                unde, repellat laboriosam placeat quam expedita tempora minus odio voluptatibus? Cum, repellat
+                voluptatum eligendi nisi quas sed tempore sit, veniam at accusamus ipsum? Illo deleniti laborum libero
+                fugiat, sequi ipsam ut repellat ipsum porro nostrum modi?</p>
+
         </div>
-        
-        
-      
-      </section>
+
+
+        </div>
+
+
+
+    </section>
 </body>
 
 </html>
