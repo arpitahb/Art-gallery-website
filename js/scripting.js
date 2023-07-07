@@ -5,6 +5,10 @@ function openModal(modalId) {
 function closeModal(modalId) {
   document.getElementById(modalId).style.display = "none";
 }
+function navigateTodestination1(){
+  window.location.href="about.html";
+}
+
 
 
 /*function toggleHiddenObjects(){
@@ -63,3 +67,5 @@ function toggleHiddenObjects() {
             isExpanded = false;
         }
     }*/
+/* =================================== Responsive Gallery Card on Home webpage ========================================*/
+
